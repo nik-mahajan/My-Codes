@@ -79,4 +79,32 @@ Level -11
 bandit11
 Password : IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
 
+cat data.txt | tr "[A-M,N-Z,a-m,n-z]" "[N-Z,A-M,n-z,a-m]"
+
+Level -12
+bandit12
+Password : 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+cd /temp
+mkdir mahajan
+cat /home/bandit12/data.txt | xxd -r > /mahajan/data1
+file data1
+mv data1 data1.gz
+gzip -d data1.gz
+ls
+file data1
+mv data1 data2.bz2
+bzip2 -d data2.bz2
+
+mv data data.tar
+tar xvf data.tar
+ls
+file data
+
+Finally ASCII TEXT 
+cat data
+
+Level -13
+bandit13
+Password : 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 
