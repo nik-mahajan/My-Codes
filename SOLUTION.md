@@ -85,9 +85,9 @@ Level -12
 bandit12
 Password : 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 
-cd /temp
-mkdir mahajan
-cat /home/bandit12/data.txt | xxd -r > /mahajan/data1
+cd /tmp
+mkdir folder1
+cat /home/bandit12/data.txt | xxd -r > folder1/data1
 file data1
 mv data1 data1.gz
 gzip -d data1.gz
@@ -107,4 +107,43 @@ cat data
 Level -13
 bandit13
 Password : 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+ls
+ssh -i sshkey.private bandit14@localhost
+
+Level -14
+bandit14
+Password : 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+telnet localhost 30000
+
+Level - 15
+bandit15
+Password : BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+openssl s_client -connect  localhost:30001
+
+Level -16
+bandit16
+Password : cluFn7wTiGryunymYOu4RcffSxQluehd
+
+Level -17
+bandit17
+Password : xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
+
+diff passwords.old passwords.new
+
+Level -18
+Password : kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+
+ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+
+Level -19
+bandit19
+Password : IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+./bandit20-do cat /etc/bandit_pass/bandit20
+
+Level -20
+bandit20
+Password : GbKksEFF4yrVs6il55v6gwY5aVje5f0j
 
