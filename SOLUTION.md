@@ -16,7 +16,7 @@ cat ./-
   
 Level-2  
 bandit2  
-Password:   
+Password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
   
 cat 'spaces in this filename'  
   
@@ -35,11 +35,12 @@ Password: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 cd  
 ls 
 cat ./-file07 
+
 Level-5 
 bandit5 
 Password: koReBOKuIDDepwhWk7jZC0RTdopnAYKh 
  
-find ./ -type f -readable ! -executable -size 1033c 
+find ./ -type f -readable ! -executable -size 1033c //unicode text
 cat ./inhere/maybehere07/.file2 
  
  
@@ -124,6 +125,22 @@ openssl s_client -connect  localhost:30001
 Level -16  
 bandit16  
 Password : cluFn7wTiGryunymYOu4RcffSxQluehd  
+
+nmap -p 30000 32000 localhost
+cat /etc/bandit_pass/bandit16 | openssl s_client -connect localhost:31790
+mkdir /tmp/nik123 
+cd /tmp/nik123
+touch sshkey.private
+vim sshkey.private
+i to insert
+esc to exit insert mode and switch to command mode
+:wq to save and quit
+ssh -i sshkey.private bandit17@localhost
+chmod 400 sshkey.private
+ssh -i sshkey.private bandit17@localhost
+cat /etc/bandit_pass/bandit17
+exit
+rm -rf sshkey.private
   
 Level -17  
 bandit17  

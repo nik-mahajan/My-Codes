@@ -1,0 +1,17 @@
+touch file_name
+cat file_name
+mkdir directory_name
+cd directory_name
+root directory is represented by '/'
+pwd
+ls 
+ls -a  (for hidden files)
+cd ..  (to move to parent directory)
+cd (to move to home directory)
+mv file_to_move destination_directory
+mv directory_to_move destination_directory
+mv old_file_name new_file_name
+cp file_to_copy new_file_name
+cp -r directory_to_copy new_directory_name
+rm file_to_remove
+rm -r directory_to_remove
