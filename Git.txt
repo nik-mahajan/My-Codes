@@ -1,0 +1,11 @@
+git init
+git branch b1
+git checkout b1
+git remote add <name> <url>
+git remote -v
+git add -A
+git commit -m"Message"
+git clone <url>
+git pull <url> <branch>
+git push <url> <branch>
+git status
