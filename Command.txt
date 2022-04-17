@@ -15,3 +15,6 @@ cp file_to_copy new_file_name
 cp -r directory_to_copy new_directory_name
 rm file_to_remove
 rm -r directory_to_remove
+
+clear or cls (to clear screen)
+exit (logout)
