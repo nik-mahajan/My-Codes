@@ -78,7 +78,7 @@ function taskbutton(event) {
     else if(target.classList[0]==="edit"){
         const tupdate=document.createElement('input');
         tupdate.setAttribute("type","datetime-local");
-
+        target.classList.add("active");
         const bupdate=document.createElement('button');
         ptodo.appendChild(tupdate);
         ptodo.appendChild(bupdate);
@@ -89,9 +89,14 @@ function taskbutton(event) {
             update(ref(database, 'todos/nikhil/' + target.value), {
                 tasktime:time
             })
-            tupdate.value=""
-            alert("Rescheduled");
+            tupdate.value="";
+            tupdate.remove();
+            bupdate.remove();
+
         })
+        
+    
+
       
     }
 
