@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    /* text-align: center; */
+}
+.container{
+    border: 3px solid blue;
+    width: 900px;
+    margin: auto;
+    /* margin: 33px auto; */
+
+}
+
+
+.item{
+    border: 3px solid red;
+    margin: 12px 3px;
+    padding: 12px 3px;
+    background-color: aquamarine;
+}
+
+
+#fruit{
+    float:left;
+    width: 40%; 
+}
+
+#computer{
+    float: left;
+   width: 40%;
+  }
+  
+
+#stationery{
+   width: 100%;
+   clear:left;
+   /* float: left; */
+   /* clear:right; */
+}
+
+
+.btn {
+    border: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color:aqua
+}
+
+a{
+    text-decoration: none;
+}
+
+a:active{}
+

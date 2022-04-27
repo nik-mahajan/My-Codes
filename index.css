@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#p1{
+    color:lawngreen;  
+    /* color: rgb(0, 255,0);   green */
+    /* color: #f1ff8f;   hex colors  */
+    border-radius: 3px;
+    font-family: cursive;
+    font-size: 30px;
+    /* 1 pixel = 1/96th of a inch */
+    /* 2em = 2 times the respective parent's property   */
+    font-weight: bold;
+    font-style: italic;
+    /* background-color: aqua; */
+    height: 400px;
+    width: 300px;
+    /* border-width: 3px;
+    border-style: solid; */
+
+    border: 3px solid yellow;
+    border-radius: 20px;
+    background-image: url("https://cdn.codechef.com/images/cc-logo.svg");
+    /* background-repeat: repeat-x; */
+    /* repeat in x only */
+    background-repeat: no-repeat;
+    background-position: center center;   
+    /* x and y cordinates */
+    /* top left , center right */
+
+}
+
+p {}
+.sp{
+    border: 3px solid rgb(255, 0, 0);
+    background-color: rgb(0, 21, 255);
+    padding: 30px;
+    margin: 50px;
+    /* padding : top right bottom left */
+    /* padding : 24px 334px;  (top and bottom)  (left and right)*/
+    width: 200px;
+    /* box-sizing: border-box; */
+
+}
+
+header , p .intro {}

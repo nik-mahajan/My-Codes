@@ -1,0 +1,102 @@
+img {
+    display: block;
+    /* display: inline; */
+    width: 200px;
+    margin: auto;
+    /* Here Img is inline element and to place element at center first make display 
+    as block then set the width and then margin:auto */
+    border: 1px solid red;
+}
+
+h3 {
+    border: 1px solid red;
+    /* h3 is block element */
+    width: 10%;
+    margin: auto;
+    text-align: center;
+}
+
+.navbar ul {
+    overflow: auto;
+    /* TO display background color we have to set overflow as auto because when we use
+    float , elemnets overflow and hence bg color is not displayed; */
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+}
+
+.box {
+    border: 1px solid red;
+    width: 150px;
+    /* display: inline;   can not use width with inline */
+    display: inline-block;
+    /* Can use width with inline block */
+    text-align: center;
+}
+
+/* Position : absolute, relative, static(default),
+sticky,fixed */
+
+#box3 {
+    /* position: absolute;  overlap */
+    position: relative;
+    /* Relative: relative to its normal position and will leave a gap*/
+    /* Absolute: relative to first parent */
+    /* top:34px;   left:23px  */
+    /* Fixed: position is fixed relative to browser window */
+
+}
+
+.container {
+    border: 1px solid red;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+
+    /* Initializing container as flex box */
+    display: flex;
+
+    /* Properties for flex box */
+    /* flex-direction: column; 
+    row-reverse*/
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* In horizontal direction */
+    /* align-items: center;   In vertical direction */
+}
+
+
+.item {
+    border: 1px solid green;
+    margin: 3px;
+    padding: 3px;
+    width: 150px;
+    background-color: aqua;
+
+}
+
+/* display : none; this will delete element
+from display and also delete the space that element is taking*/
+
+/* visibility: hidden ;  only element is disappear from display but space that element
+is taking will be reserved  */
+
+
+/* z-index will not work for static position */
+/*higher the z-index of element then element will be displayed over another */
+
+
+/* div p{} 
+will apply css to any p tag present inside div ( css will bee applied to indirect and direct 
+child of div )*/
+
+/* div > p {}
+will apply css to p tag that are direct child of div */
+
+/* div+p{}
+css will be applied to p tag whose previous tag is div
+<div>....</div>  
+<p>....</p>          */
+
